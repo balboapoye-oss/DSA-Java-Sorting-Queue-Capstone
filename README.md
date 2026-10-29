@@ -103,21 +103,12 @@ java Main
 *Searching by registration number returns the matching record.*
 
 ### 4. Queue Operations
-![Enqueue](Screenshots/addforchecking.png)
 
-*A participant is added to the check-in line and the system reports their position.*
-
-![Waiting list](Screenshots/displaychecking.png)
-|
-*The waiting list shown from front to back. John Smith joined first, so he is at the front.*
 
 ![Peek](Screenshots/viewnextparticipant.png)
 
 *Peek shows the next participant, John Smith, without removing him from the line.*
 
-![Dequeue](Screenshots/dequeueparticipant.png)
-
-*Dequeue checks in the participant at the front of the line (John Smith) and reports that two are still waiting. This is FIFO in action: the first to join is the first to be served.*
 
 ![Queue empty check](Screenshots/checkqueue.png)
 
