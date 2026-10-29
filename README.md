@@ -81,4 +81,68 @@ java Main
 
 **Suggested first run:** register several participants (option 1), try a search (option 3) and a sort (option 4), enqueue a few participants (option 5), then use peek, display, and dequeue (options 7, 8, 6) to watch FIFO order in action. Enter `0` to exit.
 
+## Screenshots
 
+### 1. Main Menu
+![Main menu](Screenshots/MainMenu.png)
+
+*The main menu listing every available operation.*
+
+### 2. Registering and Displaying Participants
+![Registering a participant](Screenshots/register-participants.png)
+
+*A participant is registered with a name and a date, and the system assigns registration number 1001.*
+
+![Displaying participants](Screenshots/displayparticipants.png)
+
+*The stored record shown with its registration number, date, and status.*
+
+### 3. Searching
+![Search by registration number](Screenshots/search-participant.png)
+
+*Searching by registration number returns the matching record.*
+
+### 4. Queue Operations
+![Enqueue](Screenshots/addforchecking.png)
+
+*A participant is added to the check-in line and the system reports their position.*
+
+![Waiting list](Screenshots/displaychecking.png)
+|
+*The waiting list shown from front to back. John Smith joined first, so he is at the front.*
+
+![Peek](Screenshots/viewnextparticipant.png)
+
+*Peek shows the next participant, John Smith, without removing him from the line.*
+
+![Dequeue](Screenshots/dequeueparticipant.png)
+
+*Dequeue checks in the participant at the front of the line (John Smith) and reports that two are still waiting. This is FIFO in action: the first to join is the first to be served.*
+
+![Queue empty check](Screenshots/checkqueue.png)
+
+*The empty check reports that the queue still has a participant waiting.*
+
+### 5. Bubble Sort
+![Bubble Sort](Screenshots/bubblesortdemo.png)
+
+*Records before and after Bubble Sort by name, ascending.*
+
+### 6. Insertion Sort
+![Insertion Sort](Screenshots/insertionsortdemo.png)
+
+*Records before and after Insertion Sort by registration number, descending.*
+
+### 7. Selection Sort
+![Selection Sort](Screenshots/selectionsortdemo.png)
+
+*Records before and after Selection Sort by registration number, ascending.*
+
+### 8. Input Validation
+![Invalid menu input](Screenshots/validatemenu.png)
+
+*Non-numeric input and an out-of-range menu choice are rejected and the user is prompted again.*
+
+![Invalid fields](Screenshots/errordate.png)
+
+*A blank name and an impossible date (2026-02-31) are rejected.*
